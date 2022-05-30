@@ -1,5 +1,5 @@
 # sopel-http
-[![PyPi Version](https://img.shields.io/pypi/v/sopel-http.svg)](https://pypi.python.org/pypi/sopel-http)
+[![PyPi Version](https://img.shields.io/pypi/v/sopel-http.svg)](https://pypi.org/project/sopel-http/)
 
 Interact with your [Sopel](https://github.com/sopel-irc/sopel) bot over HTTP
 
