@@ -9,11 +9,12 @@ so with a simple `pip install sopel-http`.
 
 ## Configuration
 You can change which IP addresses and ports `sopel-http` binds to in your Sopel
-configuration. For example, to bind to port 80 on all IPs (including public!):
+configuration. For example, to bind to port 8080 on all IPs (including public!):
 ```ini
 [http]
-bind = "[::]:80"
+bind = "[::]:8080"
 ```
+By default it listens on 127.0.0.1 and ::1 (localhost), port 8094.
 
 ## Usage
 See the example plugin,
