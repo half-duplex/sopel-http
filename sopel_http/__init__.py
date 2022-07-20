@@ -6,7 +6,6 @@ Released under the EUPL-1.2
 
 from __future__ import annotations
 
-import logging
 from threading import Thread
 from typing import TYPE_CHECKING
 from urllib.parse import urlparse
@@ -15,6 +14,7 @@ from flask import Flask
 from gevent import monkey
 from gevent.pywsgi import WSGIServer
 from sopel.config.types import ListAttribute, StaticSection
+from sopel.tools import get_logger
 
 if TYPE_CHECKING:
     from typing import List
@@ -22,7 +22,7 @@ if TYPE_CHECKING:
     from sopel.bot import Sopel
 
 app = Flask(__name__)
-LOGGER = logging.getLogger(__name__)
+LOGGER = get_logger(__name__)
 servers: List[Thread] = []
 
 monkey.patch_all()
